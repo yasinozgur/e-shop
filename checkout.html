@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/checkout.css" />
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <h1 class="logo">Furniture Shop</h1>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register </a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+            <li><a href="success.html">Succes</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="checkout">
+        <form>
+          <h1>Checkout</h1>
+
+          <div class="input-group">
+            <label for="name" class="label">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="İsim"
+              class="input"
+              pattern="[A-Za-z]{2,0}"
+              autofocus
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="surname" class="label">Surname</label>
+            <input
+              type="text"
+              id="surname"
+              placeholder="Surname"
+              class="input"
+              pattern="[A-Za-z]{2,0}"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="email" class="label">Email</label>
+            <input
+              type="email"
+              class="input"
+              placeholder="Email"
+              id="email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password" class="label">Password</label>
+            <input
+              type="password"
+              class="input"
+              placeholder="Password"
+              id="password"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="address" class="label">Address</label>
+            <input
+              type="password"
+              class="input"
+              placeholder="Street, Street and Building No"
+              id="address"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="city" class="label">Şehir</label>
+            <select name="" id="city" class="select">
+              <option value="istanbul">İstanbul</option>
+              <option value="ankara">Ankara</option>
+              <option value="izmir">İzmir</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="county" class="label">County</label>
+            <select name="county" class="select" id="">
+              <option value="adalar">Adalar</option>
+              <option value="bakırköy">Bakırköy</option>
+              <option value="beyoglu">Beyoglu</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" id="sameAddress" />
+            <label for="sameAddress">
+              Faturanın adresim ile teslimat adresim aynı
+            </label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" id="saveMyInfo" />
+            <label for="saveMyInfo">
+              Bilgilerimi bir dahaki sefer için kaydet
+            </label>
+          </div>
+          <div class="input-group">
+            <h2 class="card-type">Kart Tipinizi Seçin</h2>
+            <div class="select-card">
+              <input type="radio" name="cardType" id="mastercard" />
+              <label for="mastercard">Master Card</label>
+            </div>
+            <div class="select-card">
+              <input type="radio" name="cardType" id="visa" />
+              <label for="visa">Visa</label>
+            </div>
+            <div class="select-card">
+              <input type="radio" name="cardType" id="mir" />
+              <label for="mir">Mir</label>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+
+      <footer class="page-footer">Footer Section</footer>
+    </main>
+  </body>
+</html>
